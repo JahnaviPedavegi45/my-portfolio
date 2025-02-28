@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/js/all.min.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <nav>
+        <div class="nav-container">
+            <div class="logo">My <span>Portfolio</span></div>
+            <div class="links">
+                <a href="#">Home</a>
+                <a href="#">About</a>
+                <a href="#">Skills</a>
+                <a href="#">Projects</a>
+                <a href="#">Contact</a>
+            </div>
+            <i class="fa-solid fa-bars hamburg" onclick="toggleMenu()"></i>
+        </div>
+        <div class="dropdown">
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Skills</a>
+            <a href="#">Projects</a>
+            <a href="#">Contact</a>
+            <i class="fa-solid fa-xmark cancel" onclick="toggleMenu()"></i>
+        </div>
+    </nav>
+
+    <section>
+        <div class="main-container">
+            <div class="content">
+                <h1>Hey, I'm <span>Jahnavi</span></h1>
+                <h2>Aspiring Data Scientist</h2>
+                <p>"I am a passionate Computer Science and Data Science student, eager to explore the world of data-driven solutions. My interests lie in machine learning, artificial intelligence, and big data analytics. I enjoy solving real-world problems using technology and continuously learning new skills to enhance my expertise."</p>
+                <div class="social-links">
+                    <a href="https://github.com/jahnavipedavegi" target="_blank"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/jahnavi-pedavegi-10b520280?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="mailto:your-email@example.com"><i class="fa-solid fa-envelope"></i></a>
+                </div>
+                <div class="btn">
+                    <a href="https://drive.google.com/file/d/17u_MJZ7hkRe0zkENlHgS6isYEOaV7STq/view?usp=drivesdk" download>
+                        <button class="cv-button">Download CV</button>
+                    </a>
+                </div>
+                
+                
+                
+            </div>
+            <div class="image">
+                <img src="port.jpg" alt="Your Image">
+            </div>
+        </div>
+    </section>
+
+    <script>
+        function toggleMenu() {
+            document.querySelector(".dropdown").classList.toggle("active");
+        }
+    </script>
+
+</body>
+</html>
